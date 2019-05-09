@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TiposDeLayoutsPV.XamlViews.StackLayoutView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Inicio" HorizontalOptions="Start" />
+            <Label Text="Centro" HorizontalOptions="Center" />
+            <Label Text="Final" HorizontalOptions="End" />
+
+            <Label Text="Bloque" FontSize="35" 
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="Center" 
+                   BackgroundColor="Blue"/>
+
+            <Label Text="Bloque" FontSize="35" 
+                   HorizontalOptions="EndAndExpand"
+                   VerticalOptions="End" 
+                   BackgroundColor="Yellow"/>
+
+            <Label Text="Bloque" FontSize="35" 
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="Fill" 
+                   BackgroundColor="GreenYellow"/>
+
+            <Label Text="Bloque" FontSize="35" 
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand" 
+                   BackgroundColor="Red"/>
+
+            <StackLayout Spacing="0" Orientation="Horizontal">
+                <Label Text="Tipos de" />
+                <Label Text="Layouts" HorizontalOptions="CenterAndExpand" />
+                <Label Text="StackLayout." />
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

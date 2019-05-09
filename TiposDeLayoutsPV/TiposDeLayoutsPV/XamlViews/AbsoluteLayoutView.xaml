@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TiposDeLayoutsPV.XamlViews.AbsoluteLayoutView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="AbsoluteLayout" FontSize="35" HorizontalOptions="CenterAndExpand" />
+            <AbsoluteLayout BackgroundColor="MediumPurple" VerticalOptions="FillAndExpand">
+                
+                <Label x:Name="text1" 
+                       Text="AbsoluteLayout"
+                       TextColor="Black"
+                       AbsoluteLayout.LayoutFlags="PositionProportional"
+                       AbsoluteLayout.LayoutBounds="0, 0, 150, 150"/>
+
+                <BoxView AbsoluteLayout.LayoutBounds="200, 200, 100, 25" BackgroundColor="Fuchsia"/>
+            </AbsoluteLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

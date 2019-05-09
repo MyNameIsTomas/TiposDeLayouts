@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TiposDeLayoutsPV.XamlViews.FlexLayoutView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="FlexLayout" FontSize="35" HorizontalOptions="CenterAndExpand" />
+            <FlexLayout AlignItems="Center"
+                        Direction="Column" 
+                        JustifyContent="Start"
+                        BackgroundColor="LightYellow">
+                <Label Text="Mi perfil"/>
+                <Image Source="https://files.merca20.com/uploads/2016/03/foto-perfil-facebook.jpg" 
+                       WidthRequest="200" HeightRequest="200"/>
+                <Label Text="Información sobre mi perfil"/>
+                <Label Text="Más información sobre mi perfil" />
+                <Label Text="Aun más información sobre mi perfil" />
+                <Button Text="Más información" HorizontalOptions="FillAndExpand"/>
+            </FlexLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
